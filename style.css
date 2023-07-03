@@ -1,0 +1,562 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.spacer{
+    height: 50vh;
+}
+
+.flex{
+    display: flex;
+}
+
+/* Navigation */
+
+.navbar{
+    height: 60px;
+    background-color: #0F1111;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+header div{
+    display: flex;
+}
+
+.nav-logo{
+    /* width: 100%; */
+    height: 55px;
+}
+
+.logo{
+    background-image: url("assets/amazon_logo.png");
+    background-size: cover;
+    width:113px;
+    height: 50px;
+}
+
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border-color: white;
+    border-radius: 3px;
+}
+
+.nav-address{
+    min-width: fit-content;
+    padding: 5px;
+    flex-direction: column;
+}
+.address-head{
+    color: #cccccc;
+    font-size: 0.9rem;
+    padding:0 10px 0 5px;
+}
+.address-icon{
+    font-weight: 700;
+}
+.nav-search-bar{
+    height: 45px;
+    background-color: transparent;
+    /* width: 600px; */
+    /* justify-content: space-evenly; */
+}
+
+.items-name{
+    width: 50px;
+    padding-left: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+    border-top-left-radius: 5px;
+    border-end-start-radius: 5px;
+    border: none;
+}
+.nav-search-box{
+    font-size: 1.3rem;
+    padding: 5px;
+    width: 700px;
+    border-color: transparent;
+}
+.nav-search-box:focus{
+    outline: none;
+    border: 3px solid orange;
+}
+
+.search-icon{
+    color: black;
+    width: 45px;
+    background-color: orange;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 5px;
+    border-end-end-radius: 5px;
+}
+
+.nav-lang{
+    font-weight: 700;
+    padding: 13px;
+}
+.lang-icon{
+    height: 16.3px;
+    width: 21.6px;
+    margin-right: 5px;
+}
+
+.nav-account{
+    min-width: fit-content;
+    padding: 5px;
+    flex-direction: column;
+}
+.account-head{
+    color: #cccccc;
+    font-size: 0.9rem;
+    padding-left: 15px;
+    margin-left: -15px;
+}
+.account-body{
+    font-weight: 700;
+}
+.nav-return{
+    min-width: fit-content;
+    padding: 5px;
+    flex-direction: column;   
+}
+.return-head{
+    color: #cccccc;
+    font-size: 0.9rem;
+    padding-left: 15px;
+    margin-left: -15px;
+}
+.return-body{
+    font-weight: 700;
+}
+
+.nav-cart{
+    padding-right: 5px;
+}
+.cart-icon{
+    font-size: 1.3rem;
+    padding-top: 10px;
+}
+.cart-head{
+    color: orange;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-left: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+.cart-body{
+    color: white;
+    font-size: 1rem;
+    font-weight: 700; 
+}
+
+/* Panel */
+
+.panel{
+    color: white;
+    width: 100%;
+    height: 45px;
+    background-color: #232f3e;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.panel-menu{
+    padding-right: 5px;
+    font-size: 1.1rem;
+    /* display: inline; */
+}
+.panel-left{
+    align-items: center;
+}
+#option1{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.panel-middle{
+    width: 80%;
+    padding-left: 30px;
+    gap: 30px;
+}
+.panel-options{
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.panel-right{
+    font-size: 1.1rem;
+    font-weight: 700;
+    align-items: center;
+}
+
+/* Container */
+
+.container{
+    background-color:  #ececea ;
+    position: relative;
+    margin: 0px 20px;
+}
+
+/* Hero Section */
+
+.hero-section{
+    background-image: url("assets/hero_image.jpg");
+    /* background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url("./assets/hero_image.jpg"); */
+    background-size: cover;
+    background-position-x: center;
+    /* position: relative; */
+    /* width: 100%; */
+    height: 660px;
+}
+.hero-head{
+    font-size: 0.9rem;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 240px;
+    left: 20px;
+    right: 20px;
+    background-color: white;
+    height: 40px;
+}
+.footer-link{
+    text-decoration: none;
+    color: #007185;
+}
+.footer-link:hover{
+    color: orange;
+    text-decoration: underline;
+}
+.hero-head-link{
+    padding-left: 5px;
+}
+
+.shop-section-1{
+    margin: -350px 20px 0px 20px;
+    /* margin: 0px 20px; */
+    display: grid;
+    grid-template-areas: "hdr1 hdr2 hdr3 hdr4"
+                         "hdr1 hdr2 hdr3 hdr5"
+                         "hdr6 hdr7 hdr8 hdr9"
+                         "hdr6 hdr7 hdr8 hdr9"  ;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.shop-images-section{
+    gap: 10px;
+    flex-direction: row;
+}
+.shop-images-section h5{
+    margin-top: -20px;
+}
+.shop-heading{
+    margin-top: 10px;
+    font-size: 1.25rem;
+}
+.shop-images{
+    width: 100%;
+    margin: 30px;
+    /* justify-content: space-evenly; */
+    /* gap: 20px; */
+    
+}
+.pic-left{
+    align-items: center;
+    flex-direction: column;
+}
+.pic-right{
+    align-items: center;
+    flex-direction: column;
+}
+
+#section-1-box-1{
+    width: 350px;
+    padding: 15px;
+    grid-area: hdr1;
+    background-color: white;
+    /* margin: 20px; */
+    /* padding: 20px; */
+}
+#section-1-box-2{
+    width: 350px;
+    padding: 15px;
+    grid-area: hdr2;
+    background-color: white;
+}
+#section-1-box-3{
+    width: 350px;
+    padding: 15px;
+    grid-area: hdr3;
+    background-color: white;
+}
+#section-1-box-4{
+    height: 160px;
+    width: 350px;
+    padding: 15px;
+    grid-area: hdr4;
+    background-color: white;
+}
+#section-1-box-5{
+    width: 300px;
+    height: 250px;
+    padding: 15px;
+    margin-left: 30px;
+    grid-area: hdr5;
+    background-image: url("assets/Fuji_D2_45M_en_US_1x._CB418309979_.jpg");
+    background-size: cover;
+    background-position-x: center;
+}
+.box-footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* padding-left: 8px; */
+    font-size: 0.85rem;
+}
+.box-sign-in{
+    height: 32px;
+    font-size: 0.85rem;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: gold;
+}
+.box-sign-in:hover{
+    background-color: rgb(235, 204, 26);
+    cursor: pointer;
+}
+
+.shop-section-2{
+    padding: 0px 20px 20px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+#section-2-box-1{
+    width: 350px;
+    padding: 15px;
+    flex-direction: column;
+    background-color: white;
+}
+#section-2-box-2{
+    width: 350px;
+    padding: 15px;
+    flex-direction: column;
+    background-color: white;
+}
+#section-2-box-3{
+    width: 350px;
+    padding: 15px;
+    flex-direction: column;
+    background-color: white;
+}
+#section-2-box-4{
+    width: 350px;
+    padding: 15px;
+    flex-direction: column;
+    background-color: white;
+}
+
+.shop-section-3{
+    padding: 0px 20px 20px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+#section-3-box-1{
+    width: 350px;
+    padding: 15px;
+    flex-direction: column;
+    background-color: white;
+}
+#section-3-box-2{
+    width: 350px;
+    padding: 15px;
+    flex-direction: column;
+    background-color: white;
+}
+#section-3-box-3{
+    width: 350px;
+    padding: 15px;
+    flex-direction: column;
+    background-color: white;
+}
+#section-3-box-4{
+    width: 350px;
+    padding: 15px;
+    flex-direction: column;
+    background-color: white;
+}
+
+.shop-images-section-3{
+    margin: 20px 0px;
+}
+
+.sign-in-footer{
+    height: 140px;
+    margin: 40px 20px 0px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgb(226, 207, 207);
+    border-bottom: 1px solid rgb(226, 207, 207);
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.sign-in-footer-head{
+    font-size: 0.9rem;
+}
+.footer-sign-in{
+    height: 30px;
+    width: 230px;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: gold;
+    font-weight: 700;
+}
+.footer-sign-in:hover{
+    background-color: rgb(235, 204, 26);
+    cursor: pointer;
+}
+.sign-in-footer-footer{
+    margin-top: 5px;
+    font-size: 0.8rem;
+}
+
+.back-to-top-footer{
+    margin-top: 12px;
+    height: 50px;
+    font-size: 0.9rem;
+    background-color: #42546b;
+    color: #ececea;
+    align-items: center;
+    justify-content: center;
+}
+.back-to-top-footer:hover{
+    cursor: pointer;
+    background-color: #4b5767;
+}
+
+.main-footer{
+    background-color: #232F3E;
+    height: 370px;
+    padding: 45px 130px;
+    color: #ececea;
+    justify-content: space-evenly;
+}
+.main-footer p{
+    color: rgb(218, 218, 218);
+    margin: 5px;
+    font-size: 0.9rem;
+}
+.main-footer p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.main-footer-head{
+    color: white !important;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.main-footer-head:hover{
+    cursor: none !important;
+    text-decoration: none !important;
+}
+.first-footer{
+    /* justify-content: ; */
+    flex-direction: column;
+}
+.second-footer{
+    flex-direction: column;
+    width: 175px;
+}
+.third-footer{
+    flex-direction: column;
+}
+.fourth-footer{
+    width: 150px;
+    flex-direction: column;
+}
+
+.subfooter{
+    background-color: #232F3E;
+    height: 100px;
+    padding: 45px 130px;
+    color: #ececea;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px solid grey;
+}
+.left-subfooter{
+
+}
+.right-subfooter{
+    flex-direction: row;
+    font-size: 0.9rem;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.lang-footer{
+    padding: 10px;
+    border: 1px solid #ececea;
+    border-radius: 4px;
+}
+.lang-footer p{
+    padding-left: 10px;
+}
+
+.currency-footer{
+    padding: 10px;
+    border: 1px solid #ececea;
+    border-radius: 4px;
+}
+.country-footer{
+    padding: 10px;
+    border: 1px solid #ececea;
+    border-radius: 4px; 
+    flex-direction: row;
+}
+
+.footer-foot{
+    background-color: #12181f;
+    height: 70px;
+    font-size: 0.7rem;
+    text-align: center;
+    color: #ececea;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top-footer-foot{
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.top-footer-foot p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bottom-footer-foot{
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
